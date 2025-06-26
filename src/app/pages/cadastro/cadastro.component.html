@@ -1,0 +1,16 @@
+<h2>Cadastro</h2>
+<form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+  <label>Nome</label>
+  <input type="text" formControlName="nome" />
+
+  <label>Email</label>
+  <input type="email" formControlName="email" />
+
+  <label>Senha</label>
+  <input type="password" formControlName="senha" />
+
+  <label>Confirmar senha</label>
+  <input type="password" formControlName="confirmarSenha" />
+
+  <button type="submit" [disabled]="cadastroForm.invalid">Cadastrar</button>
+</form>

@@ -1,0 +1,25 @@
+{
+  "usuarios": [
+    {
+      "id": "692e",
+      "nome": "Nicholas",
+      "email": "nicholas@exemplo.com",
+      "senha": "exemplo123",
+      "confirmarSenha": "exemplo123"
+    },
+    {
+      "id": "b496",
+      "nome": "Caio",
+      "email": "caio@exemplo.com",
+      "senha": "exemplo123",
+      "confirmarSenha": "exemplo123"
+    },
+    {
+      "id": "5d9d",
+      "nome": "Thagner",
+      "email": "Thagner@exemplo.com",
+      "senha": "exemplo123",
+      "confirmarSenha": "exemplo123"
+    }
+  ]
+}
