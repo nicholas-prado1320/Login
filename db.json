@@ -20,6 +20,24 @@
       "email": "Thagner@exemplo.com",
       "senha": "exemplo123",
       "confirmarSenha": "exemplo123"
+    },
+    {
+      "id": "f658",
+      "nome": "Usuario 1",
+      "email": "usuario1@ex.com",
+      "senha": "ex1234"
+    },
+    {
+      "id": "6175",
+      "nome": "ex3@a",
+      "email": "ex3@a",
+      "senha": "ex3@ab"
+    },
+    {
+      "id": "4f3f",
+      "nome": "ex4@ab",
+      "email": "ex4@ab",
+      "senha": "ex4@ab"
     }
   ]
 }

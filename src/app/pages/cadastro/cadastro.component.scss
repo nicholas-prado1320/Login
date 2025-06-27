@@ -22,13 +22,16 @@ form {
     border: none;
     border-radius: 4px;
     transition: 0.5s;
-    &:hover{
-    cursor: pointer;
-    background: rgb(42, 45, 218);
+    &:hover {
+      cursor: pointer;
+      background: rgb(42, 45, 218);
     }
 
     &:disabled {
       background-color: #ccc;
     }
+  }
+  mat-icon {
+    margin-right: 5px;
   }
 }

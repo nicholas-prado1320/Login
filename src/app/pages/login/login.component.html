@@ -17,12 +17,21 @@
       }
     </div>
 
-    <button type="submit" [disabled]="loginForm.invalid">Entrar</button>
+    <div class="botao-login">
+      <button
+        mat-raised-button
+        color="warn"
+        class="botao-personalizado"
+        type="submit"
+      >
+        <mat-icon>vpn_key</mat-icon>
+        Entrar
+      </button>
+    </div>
 
     <div class="register-link">
       Não tem cadastro?
       <a routerLink="/cadastro">Clique aqui para cadastrar-se</a>
     </div>
-    
   </form>
 </div>

@@ -12,5 +12,13 @@
   <label>Confirmar senha</label>
   <input type="password" formControlName="confirmarSenha" />
 
-  <button type="submit" [disabled]="cadastroForm.invalid">Cadastrar</button>
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="cadastroForm.invalid"
+  >
+    <mat-icon>person_add</mat-icon>
+    Cadastrar
+  </button>
 </form>

@@ -37,9 +37,9 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    &:hover{
-    cursor: pointer;
-    background: rgb(42, 45, 218);
+    &:hover {
+      cursor: pointer;
+      background: rgb(42, 45, 218);
     }
 
     &:disabled {
@@ -48,19 +48,56 @@
     }
   }
   .register-link {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
 
-  a {
-    color: #007bff;
-    text-decoration: none;
-    margin-left: 4px;
-    &:hover{
-    cursor: pointer;
-    text-decoration: underline;
+    a {
+      color: #007bff;
+      text-decoration: none;
+      margin-left: 4px;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 20px;
+      font-weight: bold;
     }
   }
-}
 
+  .botao-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .botao-personalizado {
+    background-color: #6200ea;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px 24px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  .botao-entrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #6200ea;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    line-height: 1;
+
+    mat-icon {
+      font-size: 22px;
+    }
+  }
 }
