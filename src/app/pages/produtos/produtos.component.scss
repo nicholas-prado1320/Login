@@ -1,0 +1,77 @@
+.container-produto {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .form-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p-floatlabel {
+      width: 100%;
+    }
+
+      input {
+    width: 100%;
+
+  }
+
+    .btn-confirmar {
+      background-color: #22c55e;
+      color: white;
+      border-radius: 6px;
+    }
+  }
+}
+
+.sidenav-container {
+  height: 100vh;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.btn-sair {
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  padding: 6px 12px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+  mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #3b72eb;
+  color: rgb(255, 253, 253);
+}
+
+mat-toolbar button {
+  font-weight: bold;
+  display: flex;
+  text-transform: none;
+  gap: 6px;
+  background-color: transparent;
+  border: none;
+  color: rgb(255, 253, 253);
+  cursor: pointer !important;
+}
+
+mat-sidenav {
+  width: 220px;
+}

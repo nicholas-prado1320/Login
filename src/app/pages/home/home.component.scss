@@ -2,27 +2,51 @@
   flex: 1 1 auto;
 }
 
-section {
+.sidenav-container {
+  height: 100vh;
+}
+
+mat-sidenav {
+  width: 220px;
+}
+
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #3b72eb;
+  color: rgb(255, 253, 253);
+}
+
+mat-toolbar button {
+  font-weight: bold;
+  text-transform: none;
+  gap: 6px;
+}
+
+.btn-sair {
+  color: white;
+  font-weight: bold;
+  text-transform: none;
   display: flex;
   align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
 }
 
-.example-label {
-  font-size: 14px;
-  margin: 0 16px 0 8px;
-  min-width: 120px;
+mat-icon {
+  color: rgb(255, 253, 253);
+  vertical-align: middle;
+  font-size: 22px;
 }
 
-.example-button-row {
-  max-width: 600px;
+.conteudo {
+  padding: 20px;
 }
 
-.example-button-row .mat-mdc-button-base {
-  margin: 8px 8px 8px 0;
-}
-
-.example-flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.sair-btn {
+  position: relative;
+  top: 1px;
+  color: rgb(248, 248, 248);
 }

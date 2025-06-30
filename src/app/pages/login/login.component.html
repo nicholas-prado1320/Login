@@ -1,5 +1,7 @@
 <div class="login-container">
-  <h2>Login</h2>
+  <h2>
+    <img src="/assets/vitalsis.png" alt="Vitalsis">
+  </h2>
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label>Email</label>
@@ -22,16 +24,12 @@
         mat-raised-button
         color="warn"
         class="botao-personalizado"
-        type="submit"
-      >
-        <mat-icon>vpn_key</mat-icon>
-        Entrar
-      </button>
+        type="submit">Entrar</button>
     </div>
 
     <div class="register-link">
       Não tem cadastro?
-      <a routerLink="/cadastro">Clique aqui para cadastrar-se</a>
+      <a routerLink="/cadastro">Cadastra-se aqui</a>
     </div>
   </form>
 </div>

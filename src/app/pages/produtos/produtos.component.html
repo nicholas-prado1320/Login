@@ -1,0 +1,39 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="side" [(opened)]="sidenavAberto">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/nota-fiscal">📄 Notas Fiscais</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span style="margin-left: 12px">Menu</span>
+      <span class="spacer"></span>
+      <button mat-button class="btn-sair" pButton type="button" routerLink="/home">
+        <mat-icon>logout</mat-icon>
+        <span class="sair-btn">Página inicial</span>
+      </button>
+    </mat-toolbar>
+
+    <div class="container-produto">
+      <h2>Cadastrar Produto</h2>
+
+      <div class="form-produto">
+        <p-floatlabel variant="on">
+          <input id="codigo" type="text" pInputText [(ngModel)]="produto.codigo" />
+          <label for="codigo">Código</label>
+        </p-floatlabel>
+
+        <p-floatlabel variant="on">
+          <input id="descricao" type="text" pInputText [(ngModel)]="produto.descricao" />
+          <label for="descricao">Descrição</label>
+        </p-floatlabel>
+
+        <button pButton label="Confirmar" class="btn-confirmar" (click)="confirmarProduto()"></button>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

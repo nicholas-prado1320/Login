@@ -5,8 +5,11 @@
   box-shadow: 0 0 10px #ccc;
   border-radius: 8px;
 
-  h2 {
-    text-align: center;
+  h2 img {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
   }
 
   .form-group {

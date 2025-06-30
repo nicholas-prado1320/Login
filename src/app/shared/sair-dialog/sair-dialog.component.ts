@@ -17,6 +17,6 @@ export class SairDialogComponent {
   confirmar() {
     localStorage.removeItem('usuarioLogado');
     this.dialogRef.close();
-    window.location.href = '/'; // ou this.router.navigate(['/']);
+    window.location.href = '/';
   }
 }

@@ -6,6 +6,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { SairDialogComponent } from '../../shared/sair-dialog/sair-dialog.component';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { RouterLink } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-home',
@@ -17,6 +22,9 @@ import { MatDividerModule } from '@angular/material/divider';
     MatDialogModule,
     SairDialogComponent,
     MatDividerModule,
+    MatSidenavModule,
+    MatListModule,
+    RouterLink,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
@@ -33,5 +41,12 @@ export class HomeComponent {
 
   abrirDialogoSair() {
     this.dialog.open(SairDialogComponent);
+  }
+
+  sidenavAberto = false;
+
+  sair() {
+    localStorage.removeItem('usuarioLogado');
+    window.location.href = '/';
   }
 }

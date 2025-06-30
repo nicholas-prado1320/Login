@@ -38,6 +38,54 @@
       "nome": "ex4@ab",
       "email": "ex4@ab",
       "senha": "ex4@ab"
+    },
+    {
+      "id": "998f",
+      "nome": "Cliente X",
+      "email": "cliente@cliente",
+      "senha": "cliente@cliente"
+    },
+    {
+      "id": "01cf",
+      "nome": "Teste",
+      "email": "teste@teste",
+      "senha": "teste@teste"
+    },
+    {
+      "id": "5c04",
+      "nome": "Josevaldo",
+      "email": "josevaldo@josevaldo",
+      "senha": "josevaldo@josevaldo"
+    }
+  ],
+  "nota-fiscal": [
+    {
+      "id": "f7b7",
+      "numero": "123"
+    },
+    {
+      "id": "006b",
+      "numero": "456"
+    },
+    {
+      "id": "3764",
+      "numero": "789"
+    },
+    {
+      "id": "c3dd",
+      "numero": "1020"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "a5ae",
+      "codigo": "123",
+      "descricao": "Computador"
+    },
+    {
+      "id": "43e2",
+      "codigo": "456",
+      "descricao": "Mouse"
     }
   ]
 }
