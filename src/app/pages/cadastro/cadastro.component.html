@@ -1,24 +1,43 @@
-<h2>Cadastro</h2>
-<form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
-  <label>Nome</label>
-  <input type="text" formControlName="nome" />
+<div class="cadastro-container">
+  <h2>Crie sua conta</h2>
 
-  <label>Email</label>
-  <input type="email" formControlName="email" />
+  <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+    <div class="form-group" [ngClass]="{ erro: campoInvalido('nome') }">
+      <p-floatlabel>
+        <input id="nome" type="text" pInputText formControlName="nome" />
+        <label for="nome">Nome</label>
+      </p-floatlabel>
+      <small *ngIf="campoInvalido('nome')">Nome é obrigatório</small>
+    </div>
 
-  <label>Senha</label>
-  <input type="password" formControlName="senha" />
+    <div class="form-group" [ngClass]="{ erro: campoInvalido('email') }">
+      <p-floatlabel>
+        <input id="email" type="email" pInputText formControlName="email" />
+        <label for="email">Email</label>
+      </p-floatlabel>
+      <small *ngIf="campoInvalido('email')">Email inválido</small>
+    </div>
 
-  <label>Confirmar senha</label>
-  <input type="password" formControlName="confirmarSenha" />
+    <div class="form-group" [ngClass]="{ erro: campoInvalido('senha') }">
+      <p-floatlabel>
+        <input id="senha" type="password" pInputText formControlName="senha" />
+        <label for="senha">Senha</label>
+      </p-floatlabel>
+      <small *ngIf="campoInvalido('senha')">Mínimo de 6 caracteres</small>
+    </div>
 
-  <button
-    mat-raised-button
-    color="primary"
-    type="submit"
-    [disabled]="cadastroForm.invalid"
-  >
-    <mat-icon>person_add</mat-icon>
-    Cadastrar
-  </button>
-</form>
+
+    <button type="submit" pButton label="Cadastrar" class="btn-cadastrar">
+      Cadastrar
+    </button>
+    <button
+      type="button"
+      pButton
+      label="Voltar para Login"
+      class="btn-voltar"
+      (click)="voltarLogin()"
+    >
+      Voltar para Login
+    </button>
+  </form>
+</div>

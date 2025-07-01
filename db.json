@@ -56,6 +56,12 @@
       "nome": "Josevaldo",
       "email": "josevaldo@josevaldo",
       "senha": "josevaldo@josevaldo"
+    },
+    {
+      "id": "e3d3",
+      "nome": "prado",
+      "email": "prado@prado",
+      "senha": "prado@prado"
     }
   ],
   "nota-fiscal": [
@@ -74,6 +80,10 @@
     {
       "id": "c3dd",
       "numero": "1020"
+    },
+    {
+      "id": "dccd",
+      "numero": "prado@prado"
     }
   ],
   "produtos": [
@@ -86,6 +96,11 @@
       "id": "43e2",
       "codigo": "456",
       "descricao": "Mouse"
+    },
+    {
+      "id": "57e2",
+      "codigo": "prado@prado",
+      "descricao": "prado@prado"
     }
   ]
 }
