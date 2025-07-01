@@ -4,8 +4,7 @@ import { provideRouter } from '@angular/router';
 import { provideHttpClient } from '@angular/common/http';
 import { routes } from './app/app.routes';
 import 'zone.js';
+import { appConfig } from './app/app.config';
 
-bootstrapApplication(AppComponent, {
-  providers: [provideRouter(routes), provideHttpClient()]
-})
+bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));

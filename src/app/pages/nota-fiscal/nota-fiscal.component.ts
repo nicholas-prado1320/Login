@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
 import { CommonModule } from '@angular/common';
-import { FormGroup, FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { NotaFiscalService } from '../../services/nota-fiscal.service';
@@ -32,7 +32,7 @@ import { MatDividerModule } from '@angular/material/divider';
     RouterLink,
   ],
   templateUrl: './nota-fiscal.component.html',
-  styleUrl: './nota-fiscal.component.scss',
+  styleUrls: ['./nota-fiscal.component.scss'],
 })
 export class NotaFiscalComponent {
   numeroNota: string = '';

@@ -4,11 +4,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-import { SairDialogComponent } from '../../shared/sair-dialog/sair-dialog.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Router } from '@angular/router';
 
 
 
@@ -20,7 +19,6 @@ import { RouterLink } from '@angular/router';
     MatButtonModule,
     MatIconModule,
     MatDialogModule,
-    SairDialogComponent,
     MatDividerModule,
     MatSidenavModule,
     MatListModule,
@@ -32,15 +30,16 @@ import { RouterLink } from '@angular/router';
 export class HomeComponent {
   nomeUsuario: string = '';
 
-  constructor(private dialog: MatDialog) {
+  constructor(private dialog: MatDialog, private router: Router) {
     const dados = localStorage.getItem('usuarioLogado');
     if (dados) {
       this.nomeUsuario = JSON.parse(dados).nome;
     }
   }
 
-  abrirDialogoSair() {
-    this.dialog.open(SairDialogComponent);
+  logout() {
+    localStorage.removeItem('usuarioLogado');
+    this.router.navigate(['']);
   }
 
   sidenavAberto = false;
